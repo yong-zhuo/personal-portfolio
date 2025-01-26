@@ -11,6 +11,23 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        exo: ["Exo", "monospace"],
+      },
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      keyframes: {
+
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(100vw)",
+            opacity: 0,
+          },
+        },
+      },
     },
   },
   plugins: [require('daisyui'),],
@@ -24,4 +41,5 @@ export default {
       }
     }]
   }
+  
 };

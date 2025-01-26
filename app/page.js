@@ -1,9 +1,20 @@
-import { OtherProjectCard } from "../components/OtherProjectCard";
+import GlowingCursor from "../components/GlowingCursor";
+import { Meteors } from "../components/Meteors";
+import Navbar from "../components/navigation/Navbar";
+import Hero from "../components/section/Hero";
+import Skills from "../components/skills/Skills";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-base-100">
-      <OtherProjectCard />
-    </main>
+    <>
+    
+      <GlowingCursor />
+      <main className="flex min-h-screen flex-col bg-base-100">
+        <Navbar />
+        <Hero />
+        <Skills />
+      </main>
+    </>
   );
 }
