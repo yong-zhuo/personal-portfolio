@@ -2,11 +2,11 @@
 
 import React from 'react'
 
-const SkillIcon = ({name, Icon}) => {
+const SkillIcon = ({name, Icon, size}) => {
   return (
-    <div className='tooltip tooltip-bottom' data-tip={name}>
+    <div className='tooltip tooltip-bottom font-JetBrains ' data-tip={name}>
         <Icon 
-        size={35}
+        size={size ? size : 35}
         className="transition-all cursor-pointer  text-secondary hover:text-accent hover:scale-125"  />
     </div>
   )

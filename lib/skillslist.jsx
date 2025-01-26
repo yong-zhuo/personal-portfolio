@@ -115,3 +115,36 @@ export const others = [
         icon: SiFigma
     }
 ]
+
+export const beanchillin = [
+    {
+        id:1,
+        name:"Next.js",
+        icon: SiNextdotjs
+    },
+    {
+        id:2,
+        name:"React.js",
+        icon: SiReact
+    },
+    {
+        id:3,
+        name:"Tailwind CSS",
+        icon: SiTailwindcss
+    },
+    {
+        id: 4,
+        name:"PostgreSQL",
+        icon: SiPostgresql
+    },
+    {
+        id: 5,
+        name: "Prisma",
+        icon: SiPrisma
+    },
+    {
+        id: 6,
+        name: "Typescript",
+        icon: SiTypescript,
+    },
+]

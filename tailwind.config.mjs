@@ -13,6 +13,7 @@ export default {
       },
       fontFamily: {
         exo: ["Exo", "monospace"],
+        JetBrains: ["JetBrains Mono", "monospace"],
       },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",

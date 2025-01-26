@@ -5,7 +5,7 @@ const SocialLinks = () => {
     const hover = "hover:scale-125 transition duration-100 ease-in-out hover:text-accent text-secondary cursor-pointer"
     return (
         <div>
-            <ul className='flex items-center gap-4'>
+            <ul className='flex items-center gap-4 transition-all'>
                 <a href="https://github.com/yong-zhuo" target='_blank'>
                     <SiGithub size={25} className={hover} />
                 </a>

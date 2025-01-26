@@ -1,6 +1,7 @@
 import GlowingCursor from "../components/GlowingCursor";
 import { Meteors } from "../components/Meteors";
 import Navbar from "../components/navigation/Navbar";
+import FeaturedProjects from "../components/section/FeaturedProjects";
 import Hero from "../components/section/Hero";
 import Skills from "../components/skills/Skills";
 
@@ -14,6 +15,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Skills />
+        <FeaturedProjects />
       </main>
     </>
   );

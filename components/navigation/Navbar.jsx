@@ -26,7 +26,9 @@ const Navbar = () => {
       className='navbar bg-base-100 w-full fixed items-center flex z-40' id="navBar">
 
       <div className='flex items-center justify-between w-full mx-4'>
-        <Image src="/yzlogo.png" alt="logo" width={70} height={70} />
+        <a href="/">
+          <Image src="/yzlogo.png" alt="logo" width={70} height={70} />
+        </a>
         <div className='hidden lg:block'>
           <SocialLinks />
         </div>
