@@ -1,6 +1,6 @@
 import AboutSection from "../components/about/AboutSection";
+import Footer from "../components/footer/Footer";
 import GlowingCursor from "../components/GlowingCursor";
-import { Meteors } from "../components/Meteors";
 import Navbar from "../components/navigation/Navbar";
 import FeaturedProjects from "../components/section/FeaturedProjects";
 import Hero from "../components/section/Hero";
@@ -20,6 +20,7 @@ export default function Home() {
         <Skills />
         <FeaturedProjects />
         <OtherProjects />
+        <Footer />
       </main>
     </>
   );

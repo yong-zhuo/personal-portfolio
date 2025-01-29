@@ -4,7 +4,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import GithubButton from '../otherprojects/GithubButton'
 import ExternalLink from '../otherprojects/ExternalLink'
-import { beanchillin } from '../../lib/skillslist'
 import SkillIcon from '../skills/SkillIcon'
 import { featuredProjects } from '../../lib/projects'
 
@@ -22,13 +21,15 @@ const FeaturedProjects = () => {
 
                     {/*For desktop*/}
                     <div>
-
+                        <div>
+                            
+                        </div>
                     </div>
 
 
 
                     {/*For mobile*/}
-                    {featuredProjects.map((proj) => <div key={proj.id} className="flex sm:hidden card bg-primary-content w-full shadow-xl mb-8">
+                    {featuredProjects.map((proj) => <div key={proj.id} className="flex sm:hidden card bg-primary-content w-full shadow-md hover:shadow-xl hover:scale-105 duration-500 mb-8">
                         <figure className='h-[24vh]'>
                             <img src={proj.image} className=' h-full w-full object-cover' />
                         </figure>

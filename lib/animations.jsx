@@ -24,3 +24,12 @@ export const slide = {
         transition: {duration: 0.5, ease: [0.76, 0, 0.24, 1]}
     }
 }
+
+export const stagger = {
+    initial: {},
+    animate: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };

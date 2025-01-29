@@ -1,6 +1,6 @@
 
 
-import { SiC, SiCss3, SiExpress, SiFigma, SiFirebase, SiGit, SiHtml5, SiJavascript, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiC, SiCss3, SiCypress, SiExpress, SiFigma, SiFirebase, SiGit, SiHtml5, SiJavascript, SiJest, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { TbBrandCSharp, TbBrandFirebase, TbBrandUnity, TbSql } from "react-icons/tb";
 
@@ -101,50 +101,27 @@ export const others = [
     },
     {
         id: 10,
+        name:"Jest",
+        icon: SiJest
+    },
+    {
+        id: 11,
+        name: "Cypress",
+        icon: SiCypress
+    },
+    {
+        id: 12,
         name: "Unity",
         icon: TbBrandUnity
     },
     {
-        id: 11,
+        id: 13,
         name: "Git",
         icon: SiGit
     },
     {
-        id: 12,
+        id: 14,
         name: "Figma",
         icon: SiFigma
     }
-]
-
-export const beanchillin = [
-    {
-        id:1,
-        name:"Next.js",
-        icon: SiNextdotjs
-    },
-    {
-        id:2,
-        name:"React.js",
-        icon: SiReact
-    },
-    {
-        id:3,
-        name:"Tailwind CSS",
-        icon: SiTailwindcss
-    },
-    {
-        id: 4,
-        name:"PostgreSQL",
-        icon: SiPostgresql
-    },
-    {
-        id: 5,
-        name: "Prisma",
-        icon: SiPrisma
-    },
-    {
-        id: 6,
-        name: "Typescript",
-        icon: SiTypescript,
-    },
 ]

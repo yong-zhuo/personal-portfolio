@@ -1,19 +1,33 @@
 import React from 'react'
+import SkillIcon from '../skills/SkillIcon'
+import GithubButton from './GithubButton'
+import ExternalLink from './ExternalLink'
 
-export const OtherProjectCard = ({proj}) => {
+export const OtherProjectCard = ({ proj }) => {
   return (
-    <div className="card bg-primary-content w-96 shadow-xl">
-      <figure className="px-4 pt-4">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-          className="rounded-xl" />
-      </figure>
+    <div className="grid-item card bg-primary-content w-full sm:w-[320px] lg:w-[400px] xl:w-[320px] h-[240px] sm:h-[260px] xl:h-[290px] shadow-md duration-500 hover:scale-105 hover:shadow-xl">
       <div className="card-body p-5">
-        <h2 className="card-title">Shoes!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+        <span className='flex flex-col'>
+          <h2 className="card-title flex flex-row justify-between items-center">
+            <span className='text-2xl'>{proj.name}</span>
+            <span className='font-JetBrains text-sm'>{proj.year}</span>
+          </h2>
+          <p className='font-JetBrains text-gray-300 text-sm'>{proj.for}</p>
+        </span>
+        <p className='text-sm flex justify-center items-center'>{proj.description}</p>
+
+        <div className="mt-2 card-actions">
+          <div className='flex items-center justify-between flex-row w-full'>
+            <div className='gap-2 flex flex-wrap flex-row '>
+              {
+                proj.techStack.map((skill) => (<SkillIcon size="23" key={skill.id} name={skill.name} Icon={skill.icon} />))
+              }
+            </div>
+            <div className='flex items-center justify-between gap-2'>
+              <GithubButton link={proj.github} />
+              <ExternalLink link={proj.link} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
