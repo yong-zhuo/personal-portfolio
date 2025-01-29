@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const OtherProjectCard = () => {
+export const OtherProjectCard = ({proj}) => {
   return (
     <div className="card bg-primary-content w-96 shadow-xl">
       <figure className="px-4 pt-4">
