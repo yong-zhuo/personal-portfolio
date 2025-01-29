@@ -1,7 +1,5 @@
 import React from 'react'
 import MotionSection from './MotionSection'
-import Image from 'next/image'
-import { Meteors } from '../Meteors'
 import Link from 'next/link'
 
 const Hero = () => {
@@ -18,7 +16,6 @@ const Hero = () => {
         </p>
         <button className='btn btn-outline btn-secondary mt-12 w-fit'><Link href="#projects">View my Projects</Link></button>
       </div>
-
     </MotionSection>
   )
 }
