@@ -59,7 +59,7 @@ const Navbar = () => {
         open: { opacity: 1, y: 0 },
         closed: { opacity: 0, y: "-100%" },
       }}
-      className='navbar bg-base-100 w-full fixed items-center flex z-40' id="navBar">
+      className='navbar bg-base-100 w-full fixed items-center flex z-40 h-[11vh]' id="navBar">
 
       <div className='flex items-center justify-between w-full mx-4'>
         <a href="/">

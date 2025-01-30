@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className='max-w-full pt-16  pb-16 text-sm sm:pb-8 flex gap-2 flex-col items-center justify-center'>
-            <p className=''>
+        <footer className='sm:max-w-full pl-16 pr-16 pt-16  pb-16 text-xs sm:text-sm sm:pb-8 flex gap-2 flex-col items-center justify-center'>
+            <p className='text-center'>
                 Built with
                 {" "}
                 <a href='https://nextjs.org/' target="_blank" className='text-slate-300 text-md hover:text-secondary '>Next.js</a>,

@@ -14,7 +14,7 @@ const FeaturedProjects = () => {
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
-            className='flex items-center justify-center px-10 sm:px-28 w-full py-12 h-[140vh]'>
+            className='flex items-center justify-center px-10 sm:px-28 w-full py-12 min-h-[100vh] sm:min-h-[120vh] '>
             <div className='flex flex-col justify-center w-[750px] sm:w-[950px]' id='projects'>
                 <h1 className='font-JetBrains text-3xl sm:text-4xl font-bold flex items-center'>Featured Projects</h1>
                 <div className='mt-8 flex flex-col items-center justify-center'>
@@ -100,7 +100,7 @@ const FeaturedProjects = () => {
 
                             <div className="mt-2 card-actions">
                                 <div className='flex items-center justify-between flex-row w-full'>
-                                    <div className='gap-2 flex flex-wrap flex-row '>
+                                    <div className='gap-2 flex flex-wrap flex-row sm:w-full w-3/5'>
                                         {
                                             proj.techStack.map((skill) => (<SkillIcon size="23" key={skill.id} name={skill.name} Icon={skill.icon} />))
                                         }

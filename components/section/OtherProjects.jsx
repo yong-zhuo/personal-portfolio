@@ -13,7 +13,7 @@ const OtherProjects = () => {
       initial={{ y: -50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true, amount: 0.3 }}
-      className='overflow-x-hidden flex items-center justify-center px-10 sm:px-28 w-full py-12 min-h-[80vh] flex-col'>
+      className='overflow-hidden flex items-center justify-center px-10 sm:px-28 w-full min-h-[120vh]  flex-col'>
       <div className='flex flex-col items-center justify-center w-[750px] sm:w-[950px]'>
         <h1 className='font-JetBrains text-3xl sm:text-4xl font-bold flex items-center'>Other Projects</h1>
       </div>

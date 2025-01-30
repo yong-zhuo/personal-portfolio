@@ -13,7 +13,7 @@ const Skills = () => {
       initial={{ y: -50, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true, amount: 0.5 }}
-      className='flex items-center justify-center px-10 sm:px-28 w-full py-12'>
+      className='flex items-center justify-center px-10 sm:px-28 w-full py-12 min-h-[80vh] sm:min-h-[30vh] mb-14'>
       <div className='bg-primary-content w-[750px] rounded-md flex flex-col gap-8 shadow-2xl'>
         <div className='container mx-auto p-8 flex flex-col gap-4'>
           <div>
