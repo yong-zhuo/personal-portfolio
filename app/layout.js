@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import GlowingCursor from "../components/GlowingCursor";
+import Navbar from "../components/navigation/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +16,11 @@ export default function RootLayout({ children }) {
       <body
         className={inter.className}
       >
-        <div className="">{children}</div>
+        <GlowingCursor />
+        <div className="">
+        
+          {children}
+          </div>
       </body>
     </html>
   );
