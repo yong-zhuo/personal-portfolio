@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://yongzhuo.vercel.app/" target="_blank">
-    <img src="https://deploy-badge.vercel.app/vercel/yongzhuo?style=for-the-badge" alt="Vercel Deploy"></img>
+    <img src="https://deploy-badge.vercel.app/vercel/yong-zhuo?style=for-the-badge" alt="Vercel Deploy"></img>
   </a>
 </p>
 
