@@ -22,10 +22,7 @@ const page = () => {
         viewport={{ once: true, amount: 0.3 }}
     className='bg-primary min-h-screen flex flex-col items-center justify-start'>
         <motion.div className='p-4 pl-8 lg:pl-24 mt-24 w-full' variants={fade}>
-            <Link className='group mb-2 inline-flex font-JetBrains items-center font-semibold leading-tight text-secondary' href='/'>
-                <FaArrowLeft size={12} className='group-hover:-translate-x-2 mr-2 transition'/>
-                Yong Zhuo
-            </Link>
+            
             <h1 className='text-4xl text-left font-bold sm:text-5xl'>Archive</h1>
             <p className='text-sm text-left text-secondary font-JetBrains'>A list of the projects I have done.</p>
         </motion.div>
