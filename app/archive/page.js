@@ -43,7 +43,7 @@ const page = () => {
                             <motion.tr key={index} variants={fade} className='table-row' >
                                 
                                     <td className='text-secondary'>{proj.year}</td>
-                                    <td className='font-bold'>{proj.name}</td>
+                                    <td className='font-bold '><a href={`/${proj.name}`} className='hover:underline transition-all'>{proj.name}</a></td>
                                     <td className='hidden lg:table-cell text-secondary'>{proj.for}</td>
                                     <td className='hidden lg:flex flex-row gap-4 items-center flex-wrap w-4/5 justify-start '>{proj.techStack.map((skill) => <SkillIcon Icon={skill.icon} name={skill.name} key={skill.id} size={24}/>)}</td>
                                     <td className='table-cell'>
