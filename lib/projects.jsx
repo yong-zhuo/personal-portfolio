@@ -58,7 +58,7 @@ export const featuredProjects = [
             }
         ],
         github: "https://github.com/yong-zhuo/BeanChillin",
-        link: "https://beanchillin.vercel.app",
+        link: "https://bean-chillin.vercel.app",
     },
     {
         id: 2,
