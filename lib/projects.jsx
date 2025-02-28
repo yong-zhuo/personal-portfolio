@@ -20,10 +20,14 @@ export const featuredProjects = [
   {
     id: 1,
     image: "/beanchillin.png",
-    carousel: ["/beanchillin.png"],
+    gallery: [{ id: 1, image: "/beanchillin.png", desc: 'BeanChillin Home Page' },
+      { id: 2, image: "/beanchillinlogin.png", desc: 'BeanChillin Login Page' },
+      { id: 3, image: "/beanchillinposter.png", desc: 'BeanChillin Poster' }
+    ],
     name: "BeanChillin",
     year: "2024",
     for: "NUS Orbital 2024 (Artemis)",
+    expandedDescription: "BeanChillin is a web-based forum app designed ",
     description:
       "A web-based forum for university students to create, join, and engage in tailored group discussions. Achieved Artemis level (Top 4%) in NUS Orbital 2024.",
     techStack: [
@@ -74,12 +78,12 @@ export const featuredProjects = [
       },
     ],
     github: "https://github.com/yong-zhuo/BeanChillin",
-    link: "https://bean-chillin.vercel.app",
+    link: { desc: "View Live Website", url: "https://bean-chillin.vercel.app" },
   },
   {
     id: 2,
     image: "/mediexp.jpg",
-    carousel: ["/mediexp.jpg"],
+    gallery: [{id: 1, image:"/mediexp.jpg", desc:'MRI Model in MediExp'}],
     name: "MediExp",
     year: "2024",
     for: "DSTA BrainHack XRperience 2024",
@@ -98,7 +102,10 @@ export const featuredProjects = [
       },
     ],
     github: "https://github.com/yong-zhuo/MediEXP",
-    link: "https://devpost.com/software/mediexp",
+    link: {
+      desc: "View Devpost Entry",
+      url: "https://devpost.com/software/mediexp",
+    },
   },
 ];
 
@@ -107,7 +114,9 @@ export const otherProjects = [
     id: 1,
     image: "/minimart.png",
     name: "Minimart@MWH",
-    carousel: ["/minimart.png"],
+    gallery: [{id:1, image:"/minimart.png", desc:'User Home Page'},
+      {id:2, image:'/minimartadmin.png', desc:'Admin Dashboard Page'}
+    ],
     year: "2025",
     for: "Hack 4 Good 2025",
     description:
@@ -140,12 +149,12 @@ export const otherProjects = [
       },
     ],
     github: "https://github.com/yong-zhuo/hack4good2025",
-    link: "https://minimartmwh.vercel.app/",
+    link: { desc: "View Live Website", url: "https://minimartmwh.vercel.app/" },
   },
   {
     id: 2,
     image: "/medibase3.png",
-    carousel: ["/medibase3.png"],
+    gallery: [{id:1, image:"/medibase3.png", desc:'Medibase3 App'}],
     name: "Medibase3",
     year: "2024",
     for: "CS2103T Software Engineering",
@@ -164,12 +173,15 @@ export const otherProjects = [
       },
     ],
     github: "https://github.com/AY2425S1-CS2103T-F12-3/tp",
-    link: "https://ay2425s1-cs2103t-f12-3.github.io/tp/",
+    link: {
+      desc: "View User Guide",
+      url: "https://ay2425s1-cs2103t-f12-3.github.io/tp/",
+    },
   },
   {
     id: 3,
     image: "/matchaip.png",
-    carousel: ["/matchaip.png"],
+    gallery: [{id:1, image:"/matchaip.png", desc:'Matcha ChatBot App'}],
     name: "Matcha",
     year: "2024",
     for: "CS2103T Software Engineering",
@@ -188,12 +200,12 @@ export const otherProjects = [
       },
     ],
     github: "https://github.com/yong-zhuo/ip",
-    link: "https://yong-zhuo.github.io/ip/",
+    link: { desc: "View User Guide", url: "https://yong-zhuo.github.io/ip/" },
   },
   {
     id: 4,
     image: "/saveyourgrades.jpg",
-    carousel: ["/saveyourgrades.jpg"],
+    gallery: [{ id: 1, image: "/saveyourgrades.jpg", desc:'Game Preview' }],
     name: "SaveYourGrades",
     year: "2024",
     for: "NUS Hack&Roll 2024",
@@ -217,15 +229,18 @@ export const otherProjects = [
       },
     ],
     github: "https://github.com/RaphaelFong/TeamMatchaTea",
-    link: "https://devpost.com/software/save-your-grades",
+    link: {
+      desc: "View Devpost Entry",
+      url: "https://devpost.com/software/save-your-grades",
+    },
   },
   {
     id: 5,
     image: "/ecoadventures.png",
     name: "EcoAdventures",
-    carousel: [
-      { id: 1, image: "/ecoadventures.png" },
-      { id: 2, image: "/ecoadventures2.png" },
+    gallery: [
+      { id: 1, image: "/ecoadventures.png", desc:'Time Trial Mode Screen'},
+      { id: 2, image: "/ecoadventures2.png", desc:'Title Screen'},
     ],
     year: "2023",
     for: "DSTA BrainHack XRperience 2023",
@@ -243,6 +258,9 @@ export const otherProjects = [
         icon: TbBrandCSharp,
       },
     ],
-    link: "https://docs.google.com/presentation/d/1w3SqOBXOTWzpzigD0Z-5mIbpApmpM0jM5rtQTbkgJkM/edit?usp=sharing",
+    link: {
+      desc: "View Pitch Deck",
+      url: "https://docs.google.com/presentation/d/1w3SqOBXOTWzpzigD0Z-5mIbpApmpM0jM5rtQTbkgJkM/edit?usp=sharing",
+    },
   },
 ];
