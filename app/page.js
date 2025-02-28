@@ -7,14 +7,10 @@ import Hero from "../components/section/Hero";
 import OtherProjects from "../components/section/OtherProjects";
 import Skills from "../components/skills/Skills";
 
-
 export default function Home() {
   return (
     <>
-    
-      
-      <main className="flex min-h-screen flex-col bg-base-100 overflow-x-hidden">
-      
+      <main className="flex min-h-screen flex-col overflow-x-hidden bg-base-100">
         <Hero />
         <AboutSection />
         <Skills />
