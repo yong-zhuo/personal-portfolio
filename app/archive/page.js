@@ -7,8 +7,7 @@ import ExternalLink from '../../components/otherprojects/ExternalLink'
 import SkillIcon from '../../components/skills/SkillIcon'
 import { motion } from 'framer-motion'
 import { fade, stagger } from '../../lib/animations'
-import { FaArrowLeft } from 'react-icons/fa'
-import Link from 'next/link'
+
 
 const page = () => {
 
@@ -19,7 +18,7 @@ const page = () => {
         variants={stagger}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 1 }}
     className='bg-primary min-h-screen flex flex-col items-center justify-start'>
         <motion.div className='p-4 pl-8 lg:pl-24 mt-24 w-full' variants={fade}>
             
@@ -43,7 +42,7 @@ const page = () => {
                             <motion.tr key={index} variants={fade} className='table-row' >
                                 
                                     <td className='text-secondary'>{proj.year}</td>
-                                    <td className='font-bold '><a href={`/${proj.name}`} className='hover:underline transition-all'>{proj.name}</a></td>
+                                    <td className='font-bold '><a href={`/archive/${proj.name}`} className='hover:underline transition-all'>{proj.name}</a></td>
                                     <td className='hidden lg:table-cell text-secondary'>{proj.for}</td>
                                     <td className='hidden lg:flex flex-row gap-4 items-center flex-wrap w-4/5 justify-start '>{proj.techStack.map((skill) => <SkillIcon Icon={skill.icon} name={skill.name} key={skill.id} size={24}/>)}</td>
                                     <td className='table-cell'>

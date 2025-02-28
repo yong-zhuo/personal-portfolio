@@ -13,7 +13,7 @@ export default function Home() {
     <>
     
       
-      <main className="flex min-h-screen flex-col bg-base-100">
+      <main className="flex min-h-screen flex-col bg-base-100 overflow-x-hidden">
       
         <Hero />
         <AboutSection />

@@ -14,7 +14,7 @@ const Hero = () => {
         <p className='text-sm font-normal text-white mt-6 leading-6'>
           I am currently a Year 2 Computer Science student studying at the National University of Singapore. I am passionate about web development and enjoy bringing my ideas to life.
         </p>
-        <button className='btn btn-outline btn-secondary mt-12 w-fit'><Link href="#projects">View my Projects</Link></button>
+        <button className='btn btn-outline btn-secondary mt-12 w-fit'><Link target='_blank' href="/yongzhuoresume.pdf">View my Resume</Link></button>
       </div>
     </MotionSection>
   )
