@@ -33,7 +33,7 @@ const ProjectPage = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="flex min-h-screen flex-col items-center justify-start bg-primary"
         >
-          <div className="mt-24 w-3/5 space-y-8 p-4 pl-8 lg:pl-24">
+          <div className="mt-24 w-full sm:w-3/5 space-y-8 p-4 pl-8 lg:pl-24">
             <motion.div className="">
               <h1 className="flex flex-row items-center gap-2 text-left text-2xl font-bold sm:text-3xl">
                 {decodedSlug}{" "}
@@ -71,7 +71,7 @@ const ProjectPage = () => {
             </motion.div>
             <motion.div className="flex flex-col space-y-3 text-white">
               <h1 className="text-left text-lg font-bold sm:text-xl">Gallery:</h1>
-              <div className="w-[750px] space-y-4 flex flex-wrap">
+              <div className="phone-2 space-y-4 flex flex-wrap">
                 {project.gallery.map((item) => (
                   <div key={item.id} className="flex-col flex items-center space-y-1">
                     <img
