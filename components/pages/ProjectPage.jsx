@@ -46,7 +46,7 @@ const ProjectPage = () => {
                 {project.for}
               </h2>
             </motion.div>
-            <motion.div className=" text-white">{project.description}</motion.div>
+            <motion.div className=" text-white whitespace-pre-line">{project.detailedDesc ?? project.description}</motion.div>
             <motion.div className=" space-y-3 text-white">
               <h1 className="text-left text-lg font-bold sm:text-xl">
                 Tech Stack:

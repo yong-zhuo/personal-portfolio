@@ -20,14 +20,16 @@ export const featuredProjects = [
   {
     id: 1,
     image: "/beanchillin.png",
-    gallery: [{ id: 1, image: "/beanchillin.png", desc: 'BeanChillin Home Page' },
-      { id: 2, image: "/beanchillinlogin.png", desc: 'BeanChillin Login Page' },
-      { id: 3, image: "/beanchillinposter.png", desc: 'BeanChillin Poster' }
+    gallery: [
+      { id: 1, image: "/beanchillin.png", desc: "Home Page" },
+      { id: 2, image: "/beanchillinchat.png", desc: "Group Page" },
+      { id: 3, image: "/beanchillinvideo.png", desc: "Video Chat Page" },
+      { id: 4, image: "/beanchillinposter.png", desc: "BeanChillin Poster" },
     ],
     name: "BeanChillin",
     year: "2024",
     for: "NUS Orbital 2024 (Artemis)",
-    expandedDescription: "BeanChillin is a web-based forum app designed ",
+    detailedDesc: "BeanChillin is a web-based forum designed to cater towards university students who are looking for a unified space to create and join different groups tailored to their specific needs and engage in meaningful discussions. It has a multitude of features such as Group and Post functionalities, Friend System, Direct Messaging, Video Chat Rooms and more. \n\nThis website was created in 3 months for NUS Orbital Program in 2024 where I was tasked to work with another student to create any application we want while self-learning modern web technologies and adopting relevant software engineering methodologies in our development process. Our project was eventually ranked among the top 4% in the program in terms of our product’s functionality as well as our documentation.\n\nThe motivation behind creating BeanChillin was to alleviate the hassle of joining multiple platforms by providing a centralised platform for users to easily navigate between different groups for different purposes. Additionally, it also served as an opportunity to deepen my understanding of full-stack web development and the processes behind creating modern applications like Reddit, making this both a meaningful project and a valuable learning experience.",
     description:
       "A web-based forum for university students to create, join, and engage in tailored group discussions. Achieved Artemis level (Top 4%) in NUS Orbital 2024.",
     techStack: [
@@ -83,10 +85,13 @@ export const featuredProjects = [
   {
     id: 2,
     image: "/mediexp.jpg",
-    gallery: [{id: 1, image:"/mediexp.jpg", desc:'MRI Model in MediExp'}],
+    gallery: [{ id: 1, image: "/mediexp.jpg", desc: "MRI Model in MediExp" },
+      {id:2, image: "/mediexpeye.png", desc: "Ishihara Eye Test in MediExp"}
+    ],
     name: "MediExp",
     year: "2024",
     for: "DSTA BrainHack XRperience 2024",
+    detailedDesc:'MediEXP is a 3D VR medical simulator for users to simulate different medical procedures for users to understand & experience. It features simulation for procedures such as MRi and Ishihara Eye Test. \n\nIn this hackathon. my team of 4 and I were task to improve productivity in the healthcare industry using VR technologies. After some research, we decided to focus our product on helping those who experience procedural anxiety and children with no prior experience for any medical procedure. Cancellations and refusals due to fear can waste medical resources, so our VR simulation helps patients familiarize themselves beforehand, improving cooperation and efficiency in healthcare settings',
     description:
       "A 3D VR simulator that simulates various medical procedures for players to understand & experience. Users can experience a simulation for procedures such as MRI, hearing test etc. Won Honorable Mention in DSTA BrainHack XRperience 2024.",
     techStack: [
@@ -114,10 +119,13 @@ export const otherProjects = [
     id: 1,
     image: "/minimart.png",
     name: "Minimart@MWH",
-    gallery: [{id:1, image:"/minimart.png", desc:'User Home Page'},
-      {id:2, image:'/minimartadmin.png', desc:'Admin Dashboard Page'}
+    gallery: [
+      { id: 1, image: "/minimart.png", desc: "User Home Page" },
+      { id: 2, image: "/minimartadmin.png", desc: "Admin Dashboard Page" },
     ],
     year: "2025",
+    detailedDesc:
+      "Minimart@MWH is a digital minimart designed to allow residents of Muhammadiyah Welfare Home (MWH) to view and request for items through a token economy system by using ‘vouchers’ which can be earn for doing good deeds. \n\nMinimart@MWH also features an admin management page for admins to manage product inventory and approve voucher requests. This website was created in 5 days for NUS Hack 4 Good 2025 hackathon where me, and two other peers, were tasked to digitalised the existing minimart in MWH. We found this idea both novel and meaningful, as it could teach residents valuable skills like financial management, foster positive behavior, and improve discipline, all while motivating them to learn and grow",
     for: "Hack 4 Good 2025",
     description:
       "A digital minimart designed for the residents of the Muhammadiyah Welfare Home (MWH) to request items through a token economy system. It also features an admin dashboard for the staff to manage the products and orders.",
@@ -154,9 +162,10 @@ export const otherProjects = [
   {
     id: 2,
     image: "/medibase3.png",
-    gallery: [{id:1, image:"/medibase3.png", desc:'Medibase3 App'}],
+    gallery: [{ id: 1, image: "/medibase3.png", desc: "Medibase3 App" }],
     name: "Medibase3",
     year: "2024",
+    detailedDesc:'MediBase3 is a desktop application designed for doctors to manage patient contact details, appointments, medical conditions, allergies, and more.  It combines both CLI and GUI functionality for efficiency and ease of use. \n\nThis project was done for an introduction to software engineering module where I worked on a brownfield project with a group of 5 while adhering to relevant software engineering practices. It was my first time working with an existing codebase and this experience taught me how to navigate legacy code, implement new features without breaking existing functionality, and collaborate effectively using version control and software design principles.',
     for: "CS2103T Software Engineering",
     description:
       "A desktop application designed for doctors to manage patient contact details, appointments, medical conditions, allergies, and more.",
@@ -181,7 +190,7 @@ export const otherProjects = [
   {
     id: 3,
     image: "/matchaip.png",
-    gallery: [{id:1, image:"/matchaip.png", desc:'Matcha ChatBot App'}],
+    gallery: [{ id: 1, image: "/matchaip.png", desc: "Matcha ChatBot App" }],
     name: "Matcha",
     year: "2024",
     for: "CS2103T Software Engineering",
@@ -205,7 +214,7 @@ export const otherProjects = [
   {
     id: 4,
     image: "/saveyourgrades.jpg",
-    gallery: [{ id: 1, image: "/saveyourgrades.jpg", desc:'Game Preview' }],
+    gallery: [{ id: 1, image: "/saveyourgrades.jpg", desc: "Game Preview" }],
     name: "SaveYourGrades",
     year: "2024",
     for: "NUS Hack&Roll 2024",
@@ -239,8 +248,8 @@ export const otherProjects = [
     image: "/ecoadventures.png",
     name: "EcoAdventures",
     gallery: [
-      { id: 1, image: "/ecoadventures.png", desc:'Time Trial Mode Screen'},
-      { id: 2, image: "/ecoadventures2.png", desc:'Title Screen'},
+      { id: 1, image: "/ecoadventures.png", desc: "Time Trial Mode Screen" },
+      { id: 2, image: "/ecoadventures2.png", desc: "Title Screen" },
     ],
     year: "2023",
     for: "DSTA BrainHack XRperience 2023",
