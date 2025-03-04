@@ -24,7 +24,7 @@ export const featuredProjects = [
       { id: 1, image: "/beanchillin.png", desc: "Home Page" },
       { id: 2, image: "/beanchillinchat.png", desc: "Group Page" },
       { id: 3, image: "/beanchillinvideo.png", desc: "Video Chat Page" },
-      { id: 4, image: "/beanchillinposter.png", desc: "BeanChillin Poster" },
+      { id: 4, image: "/beanchillinwireframe.png", desc: "BeanChillin Wireframes" },
     ],
     name: "BeanChillin",
     year: "2024",
