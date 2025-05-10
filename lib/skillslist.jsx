@@ -1,6 +1,6 @@
 
 
-import { SiC, SiCss3, SiCypress, SiExpress, SiFigma, SiFirebase, SiGit, SiHtml5, SiJavascript, SiJest, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiC, SiCss3, SiCypress, SiDocker, SiExpress, SiFigma, SiFirebase, SiGit, SiHtml5, SiJavascript, SiJest, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiPython, SiReact, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { TbBrandCSharp, TbBrandFirebase, TbBrandUnity, TbSql } from "react-icons/tb";
 
@@ -101,26 +101,21 @@ export const others = [
     },
     {
         id: 10,
-        name:"Jest",
-        icon: SiJest
+        name: "Docker",
+        icon: SiDocker
     },
     {
         id: 11,
-        name: "Cypress",
-        icon: SiCypress
-    },
-    {
-        id: 12,
         name: "Unity",
         icon: TbBrandUnity
     },
     {
-        id: 13,
+        id: 12,
         name: "Git",
         icon: SiGit
     },
     {
-        id: 14,
+        id: 13,
         name: "Figma",
         icon: SiFigma
     }

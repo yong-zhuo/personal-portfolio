@@ -2,19 +2,21 @@ import { FaJava } from "react-icons/fa";
 import {
   SiCss3,
   SiCypress,
+  SiDocker,
   SiJavascript,
   SiJest,
   SiJunit5,
   SiNextdotjs,
   SiPostgresql,
   SiPrisma,
+  SiPython,
   SiReact,
   SiShadcnui,
   SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import { TbBrandCSharp, TbBrandFirebase, TbBrandUnity } from "react-icons/tb";
+import { TbBrandCSharp, TbBrandFirebase, TbBrandTypescript, TbBrandUnity } from "react-icons/tb";
 
 export const featuredProjects = [
   {
@@ -84,32 +86,57 @@ export const featuredProjects = [
   },
   {
     id: 2,
-    image: "/mediexp.jpg",
-    gallery: [{ id: 1, image: "/mediexp.jpg", desc: "MRI Model in MediExp" },
-      {id:2, image: "/mediexpeye.png", desc: "Ishihara Eye Test in MediExp"}
+    image: "/sqlancerbenchmark.png",
+    gallery: [{ id: 1, image: "/sqlancerbenchmark.png", desc: "Main Page" },
+      {id:2, image: "/benchmarkreport.png", desc: "Benchmark Report"},
+      {id:3, image: "/runsqlancer.png", desc: "Running SQLancer"},
     ],
-    name: "MediExp",
-    year: "2024",
-    for: "DSTA BrainHack XRperience 2024",
-    detailedDesc:'MediEXP is a 3D VR medical simulator for users to simulate different medical procedures for users to understand & experience. It features simulation for procedures such as MRi and Ishihara Eye Test. \n\nIn this hackathon. my team of 4 and I were task to improve productivity in the healthcare industry using VR technologies. After some research, we decided to focus our product on helping those who experience procedural anxiety and children with no prior experience for any medical procedure. Cancellations and refusals due to fear can waste medical resources, so our VR simulation helps patients familiarize themselves beforehand, improving cooperation and efficiency in healthcare settings',
+    name: "SQLancer Benchmarking Platform",
+    year: "2025",
+    for: "CS3213 Foundations of Software Engineering",
+    detailedDesc:'For my module project, my group and I created a benchmarking web platform to assist in benchmarking the performance of SQLancer, an open-source automated database testing tool, across various database systems. \n\nWe implemented several crucial metrics to evaluate SQLancer performance such as code coverage analysis and SQL query complexity. We also designed a user-friendly interface and an export-to-pdf feature to allow users to better visualise and understand the results.',
     description:
-      "A 3D VR simulator that simulates various medical procedures for players to understand & experience. Users can experience a simulation for procedures such as MRI, hearing test etc. Won Honorable Mention in DSTA BrainHack XRperience 2024.",
+      "A web app to test and benchmark the performance of SQLancer, an open-source automated database testing tool, across different database systems. \n\nDesigned to help researchers, developers, and database engineers understand SQLancer’s behavior through real-time monitoring, visual insights, and complexity/code coverage analysis. ",
     techStack: [
       {
         id: 1,
-        name: "Unity",
-        icon: TbBrandUnity,
+        name: "Typescript",
+        icon: SiTypescript,
       },
       {
         id: 2,
-        name: "C#",
-        icon: TbBrandCSharp,
+        name: "Next.js",
+        icon: SiNextdotjs,
       },
+      {
+        id: 3,
+        name: "Tailwind CSS",
+        icon: SiTailwindcss,
+      },
+      {
+        id: 4,
+        name: "Shadcn/ui",
+        icon: SiShadcnui,
+      },
+      {
+        id: 5,
+        name: 'Java',
+        icon: FaJava,
+      },
+      {
+        id: 6,
+        name: 'Python',
+        icon: SiPython,
+      },
+      {
+        id: 7,
+        name: 'Docker',
+        icon: SiDocker,
+      }
     ],
-    github: "https://github.com/yong-zhuo/MediEXP",
     link: {
-      desc: "View Devpost Entry",
-      url: "https://devpost.com/software/mediexp",
+      desc: "No available links",
+      url: "",
     },
   },
 ];
@@ -211,8 +238,38 @@ export const otherProjects = [
     github: "https://github.com/yong-zhuo/ip",
     link: { desc: "View User Guide", url: "https://yong-zhuo.github.io/ip/" },
   },
-  {
+    {
     id: 4,
+    image: "/mediexp.jpg",
+    gallery: [{ id: 1, image: "/mediexp.jpg", desc: "MRI Model in MediExp" },
+      {id:2, image: "/mediexpeye.png", desc: "Ishihara Eye Test in MediExp"}
+    ],
+    name: "MediExp",
+    year: "2024",
+    for: "DSTA BrainHack XRperience 2024",
+    detailedDesc:'MediEXP is a 3D VR medical simulator for users to simulate different medical procedures for users to understand & experience. It features simulation for procedures such as MRi and Ishihara Eye Test. \n\nIn this hackathon. my team of 4 and I were task to improve productivity in the healthcare industry using VR technologies. After some research, we decided to focus our product on helping those who experience procedural anxiety and children with no prior experience for any medical procedure. Cancellations and refusals due to fear can waste medical resources, so our VR simulation helps patients familiarize themselves beforehand, improving cooperation and efficiency in healthcare settings',
+    description:
+      "A 3D VR simulator that simulates various medical procedures for players to understand & experience. Users can experience a simulation for procedures such as MRI, hearing test etc. Won Honorable Mention in DSTA BrainHack XRperience 2024.",
+    techStack: [
+      {
+        id: 1,
+        name: "Unity",
+        icon: TbBrandUnity,
+      },
+      {
+        id: 2,
+        name: "C#",
+        icon: TbBrandCSharp,
+      },
+    ],
+    github: "https://github.com/yong-zhuo/MediEXP",
+    link: {
+      desc: "View Devpost Entry",
+      url: "https://devpost.com/software/mediexp",
+    },
+  },
+  {
+    id: 5,
     image: "/saveyourgrades.jpg",
     gallery: [{ id: 1, image: "/saveyourgrades.jpg", desc: "Game Preview" }],
     name: "SaveYourGrades",
@@ -244,7 +301,7 @@ export const otherProjects = [
     },
   },
   {
-    id: 5,
+    id: 6,
     image: "/ecoadventures.png",
     name: "EcoAdventures",
     gallery: [

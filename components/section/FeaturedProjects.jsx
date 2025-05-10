@@ -69,7 +69,7 @@ const FeaturedProjects = () => {
               </h2>
               <Link
                 prefetch
-                target='_blank'
+                target="_blank"
                 href={`/archive/${featuredProjects[0].name}`}
                 className="text-3xl font-semibold hover:underline"
               >
@@ -81,11 +81,6 @@ const FeaturedProjects = () => {
               <p className="mt-6 rounded-md bg-primary-content p-5 shadow-md">
                 {featuredProjects[0].description}
               </p>
-
-              <div className="mt-4 flex flex-row justify-end gap-2">
-                <GithubButton link={featuredProjects[0].github} />
-                <ExternalLink link={featuredProjects[0].link} />
-              </div>
             </motion.div>
           </div>
 
@@ -102,7 +97,7 @@ const FeaturedProjects = () => {
               </h2>
               <Link
                 prefetch
-                target='_blank'
+                target="_blank"
                 href={`/archive/${featuredProjects[1].name}`}
                 className="text-3xl  font-semibold hover:underline"
               >
@@ -114,10 +109,6 @@ const FeaturedProjects = () => {
               <p className="mt-6 rounded-md bg-primary-content p-5 shadow-md">
                 {featuredProjects[1].description}
               </p>
-              <div className="mt-4 flex flex-row justify-start gap-2">
-                <GithubButton link={featuredProjects[1].github} />
-                <ExternalLink link={featuredProjects[1].link} />
-              </div>
             </motion.div>
             <motion.div
               viewport={{ once: true, amount: 0.5 }}
@@ -128,7 +119,7 @@ const FeaturedProjects = () => {
             >
               <Link
                 prefetch
-                target='_blank'
+                target="_blank"
                 href={`/archive/${featuredProjects[1].name}`}
                 className="object-fit inline-block h-full w-full overflow-hidden rounded-xl shadow-md"
               >
@@ -169,7 +160,7 @@ const FeaturedProjects = () => {
                   <h2 className="card-title flex flex-row items-center justify-between">
                     <Link
                       prefetch
-                      target='_blank'
+                      target="_blank"
                       href={`/archive/${proj.name}`}
                       className="hover:underline"
                     >
@@ -182,7 +173,6 @@ const FeaturedProjects = () => {
                   </p>
                 </span>
                 <p>{proj.description}</p>
-
                 <div className="card-actions mt-2">
                   <div className="flex w-full flex-row items-center justify-between">
                     <div className="flex w-3/5 flex-row flex-wrap gap-2 sm:w-full">
@@ -194,10 +184,6 @@ const FeaturedProjects = () => {
                           Icon={skill.icon}
                         />
                       ))}
-                    </div>
-                    <div className="flex items-center justify-between gap-2">
-                      <GithubButton link={proj.github} />
-                      <ExternalLink link={proj.link} />
                     </div>
                   </div>
                 </div>

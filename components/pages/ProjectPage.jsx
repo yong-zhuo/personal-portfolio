@@ -71,7 +71,7 @@ const ProjectPage = () => {
             </motion.div>
             <motion.div className="flex flex-col space-y-3 text-white">
               <h1 className="text-left text-lg font-bold sm:text-xl">Gallery:</h1>
-              <div className="phone-2 space-y-4 flex flex-wrap">
+              <div className="phone-2 space-y-4 flex flex-wrap items-center justify-center gap-4">
                 {project.gallery.map((item) => (
                   <div key={item.id} className="flex-col flex items-center space-y-1">
                     <img
